@@ -1,0 +1,313 @@
+{
+  "level" : {
+    "name" : "Level3",
+    "size" : 10,
+    "PxPos" : 2,
+    "PyPos" : 2,
+    "DxPos" : 2,
+    "DyPos" : 3,
+    "WxPos" : 2,
+    "WyPos" : 2
+  },
+  "fields" : [ {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : 1,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 2,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 1,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 3,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 2,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : 0,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 2,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 2,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 3,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : 2,
+    "fieldtype" : "Ground"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -20,
+    "fieldtype" : "Door"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  }, {
+    "fieldvalue" : -99,
+    "fieldtype" : "Wall"
+  } ]
+}

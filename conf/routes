@@ -32,6 +32,37 @@ POST        /password/change                 controllers.ChangePasswordControlle
 GET         /account/email/:email            controllers.ActivateAccountController.send(email: String)
 GET         /account/activate/:token         controllers.ActivateAccountController.activate(token: java.util.UUID)
 
+GET    /                           controllers.TrailRunnerController.menu()
+GET    /menu                       controllers.TrailRunnerController.menu()
+GET    /level                      controllers.TrailRunnerController.changeToLevelSelection()
+GET    /level/:levelId             controllers.TrailRunnerController.changeToGame(levelId: Long)
+
+GET    /win                        controllers.TrailRunnerController.win()
+GET    /lose                       controllers.TrailRunnerController.lose()
+
+GET    /sandbox                    controllers.TrailRunnerController.sandbox()
+
+GET    /move/up                    controllers.TrailRunnerController.moveUp()
+GET    /move/down                  controllers.TrailRunnerController.moveDown()
+GET    /move/left                  controllers.TrailRunnerController.moveLeft()
+GET    /move/right                 controllers.TrailRunnerController.moveRight()
+GET    /move/undo                  controllers.TrailRunnerController.undo()
+GET    /move/redo                  controllers.TrailRunnerController.redo()
+
+GET    /about                      controllers.TrailRunnerController.about()
+GET    /save                       controllers.TrailRunnerController.save()
+GET    /load                       controllers.TrailRunnerController.load()
+POST   /loadCustomGame             controllers.TrailRunnerController.loadCustomGame()
+GET    /switchHardcoreMode         controllers.TrailRunnerController.switchHardcoreMode()
+
+GET    /changedFields/:move        controllers.TrailRunnerController.getChangedFields(move: String)
+
+GET    /levelMap                   controllers.TrailRunnerController.getLevelMap()
+
+GET    /websocket                  controllers.TrailRunnerController.socket
+
+GET    /TrailRunner/*file          controllers.Assets.at(path="/public/TrailRunnerFrontend", file)
+
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/*file                    controllers.Assets.versioned(file)
+GET         /assets/*file                    controllers.Assets.versioned(path="/public", file: Asset)
 ->          /webjars                         webjars.Routes

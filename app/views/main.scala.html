@@ -13,7 +13,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" type="image/png" href="@assets.path("images/favicon.png")">
+        <link rel="shortcut icon" type="image/png" href="@assets.path("images/Logo.png")">
         <title>@title</title>
         <link @{CSPNonce.attr} href="//fonts.googleapis.com/css?family=Roboto|Montserrat:400,700|Open+Sans:400,300,600" rel="stylesheet">
         <link @{CSPNonce.attr} href="//cdnjs.cloudflare.com/ajax/libs/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
             <!--[if lt IE 9]>
             <script @{CSPNonce.attr} src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script @{CSPNonce.attr} src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-            <![endif]-->
+        <![endif]-->
     </head>
     <body>
         <header>
@@ -31,27 +31,27 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="@controllers.routes.ApplicationController.index">Silhouette Seed Template</a>
+                <a class="navbar-brand" href="@controllers.routes.ApplicationController.index">TrailRunner</a>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="@controllers.routes.ApplicationController.index">@messages("home")</a>
-                        <a class="nav-item nav-link" href="https://github.com/mohiva/play-silhouette-seed">GitHub</a>
+                        <a class="nav-item nav-link" href="https://github.com/npely/TrailRunner">GitHub</a>
                     </div>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup2">
                     <div class="navbar-nav">
-                        @user.map { u =>
-                        <a class="nav-link" href="@controllers.routes.ApplicationController.index">@u.name</a>
-                        @if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID) {
+                    @user.map { u =>
+                    <a class="nav-link" href="@controllers.routes.ApplicationController.index">@u.name</a>
+                    @if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID) {
                         <a class="nav-item nav-link" href="@controllers.routes.ChangePasswordController.view">@messages("change.password")</a>
-                        }
-                        <a class="nav-item nav-link" href="@controllers.routes.ApplicationController.signOut">@messages("sign.out")</a>
-                        }.getOrElse {
+                    }
+                    <a class="nav-item nav-link" href="@controllers.routes.ApplicationController.signOut">@messages("sign.out")</a>
+                    }.getOrElse {
                         <a class="nav-item nav-link" href="@controllers.routes.SignInController.view">@messages("sign.in")</a>
                         <a class="nav-item nav-link" href="@controllers.routes.SignUpController.view">@messages("sign.up")</a>
-                        }
+                    }
                     </div>
                 </div>
 
