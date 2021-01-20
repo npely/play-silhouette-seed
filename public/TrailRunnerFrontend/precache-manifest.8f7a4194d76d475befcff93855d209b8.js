@@ -204,7 +204,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TrailRunner/img/background.e1015db3.png"
   },
   {
-    "revision": "2cb724c611a0f1541a795cce90195545",
+    "revision": "0062396dac1e6f03e6a0b8d9b877de13",
     "url": "/TrailRunner/index.html"
   },
   {
