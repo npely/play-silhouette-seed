@@ -1,4 +1,4 @@
-importScripts("/TrailRunner/precache-manifest.16ad2b96bb8e9dfb5fb06e625254d69f.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/TrailRunner/precache-manifest.4fe2f80ce4cc686f9d06cc37760c6a88.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /* eslint-disable no-console */
 
