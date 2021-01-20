@@ -2,7 +2,7 @@ import com.typesafe.sbt.SbtScalariform._
 
 import scalariform.formatter.preferences._
 
-name := "play-silhouette-seed"
+name := "trailrunner-secure"
 
 version := "6.0.0"
 
@@ -31,14 +31,18 @@ libraryDependencies ++= Seq(
   "com.mohiva" %% "play-silhouette-testkit" % "6.1.1" % "test",
   "com.h2database" % "h2" % "1.4.199",
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test,
-  "de.htwg.se" %% "trailrunner" % "0.28",
   specs2 % Test,
   ehcache,
   guice,
   filters
-)
+  )
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+  lazy val TrailRunnerBase = ProjectRef(uri("git://github.com/npely/TrailRunner.git#improvements"), "trailRunnerBase")
+
+  lazy val root = (project in file("."))
+  .enablePlugins(PlayScala)
+  .dependsOn(TrailRunnerBase)
+  .aggregate(TrailRunnerBase)
 
 routesImport += "utils.route.Binders._"
 
