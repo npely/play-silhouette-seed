@@ -31,32 +31,52 @@ class TrailRunnerController @Inject() (scc: SilhouetteControllerComponents)(impl
   gameController.publish(new DungeonChanged)
 
   def about() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
-    Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
-  def sandbox() = Action {
-    Ok("200")
+  def sandbox() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
-  def save() = Action {
+  def save() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
     gameController.save
-    Ok("200")
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
-  def load() = Action {
+  def load() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
     gameController.load(gameController.getLevelAsJson, true)
-    Ok("200")
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
-  def loadCustomGame = Action { request =>
+  def loadCustomGame = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
     val json = request.body.asJson.get
     gameController.load(json, false)
     Ok
   }
 
-  def changeToLevelSelection() = Action {
+  def changeToLevelSelection() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
     gameController.changeToSelection()
-    Ok("200")
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
   def changeToGame(levelId: Long) = Action {
@@ -76,7 +96,11 @@ class TrailRunnerController @Inject() (scc: SilhouetteControllerComponents)(impl
       gameController.initializeGame(new Level7, false)
     }
     gameController.changeToGame()
-    Ok("200")
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
   def moveUp() = Action {
@@ -107,19 +131,31 @@ class TrailRunnerController @Inject() (scc: SilhouetteControllerComponents)(impl
     ))
   }
 
-  def undo() = Action {
+  def undo() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
     gameController.undo
-    Ok("200")
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
-  def redo() = Action {
+  def redo() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
     gameController.redo
-    Ok("200")
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
   def menu() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
     gameController.changeToMain()
-    Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
   def switchHardcoreMode() = Action {
@@ -127,12 +163,20 @@ class TrailRunnerController @Inject() (scc: SilhouetteControllerComponents)(impl
     Ok(Json.obj("hardcoreMode" -> gameController.getHardcoreMode()))
   }
 
-  def win() = Action {
-    Ok("200")
+  def win() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
-  def lose() = Action {
-    Ok("200")
+  def lose() = silhouette.SecuredAction { implicit request: Request[AnyContent] =>
+    try {
+      Ok.sendFile(new File("/app/public/TrailRunnerFrontend/index.html"), inline = true)
+    } catch {
+      case e: NoSuchFieldException => Ok.sendFile(new File("./public/TrailRunnerFrontend/index.html"), inline = true)
+    }
   }
 
   def getMoveJson(yModifier: Int, xModifier: Int): JsObject = {
