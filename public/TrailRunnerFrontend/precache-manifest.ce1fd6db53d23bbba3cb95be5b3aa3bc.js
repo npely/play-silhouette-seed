@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TrailRunner/css/about.23a25c36.css"
   },
   {
-    "revision": "32dd09251ed4830b4781",
+    "revision": "e06392d3a789434f1e42",
     "url": "/TrailRunner/css/app.e6673c9d.css"
   },
   {
@@ -12,20 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TrailRunner/css/chunk-00626e1a.0cee0552.css"
   },
   {
-    "revision": "b6cf168e5c5a27f74cf5",
-    "url": "/TrailRunner/css/chunk-01ab8f3a.b41b1100.css"
+    "revision": "f91f8f3f36ea56d61e6a",
+    "url": "/TrailRunner/css/chunk-00d830d8.12634dd2.css"
   },
   {
     "revision": "09c5a446a1acca1393f0",
     "url": "/TrailRunner/css/chunk-0b51446c.aa0ca8ec.css"
   },
   {
-    "revision": "a3e70f7ae609cb2f1aaa",
-    "url": "/TrailRunner/css/chunk-96cc0b74.9d4793ec.css"
-  },
-  {
-    "revision": "d13257143a3ac5fe3ad6",
-    "url": "/TrailRunner/css/chunk-ffb5df56.2860c6ce.css"
+    "revision": "ce835ec3df9208f21b67",
+    "url": "/TrailRunner/css/chunk-1667d5a5.a27a78f0.css"
   },
   {
     "revision": "ba111f80e8d38783ae7b",
@@ -96,6 +92,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TrailRunner/img/Ground_3_P.86eb50f4.png"
   },
   {
+    "revision": "b3a6a8ce7263278261f70dcb83f14529",
+    "url": "/TrailRunner/img/Ground_4.b3a6a8ce.png"
+  },
+  {
     "revision": "c0eab88e9286e5160d3f69f380932d7c",
     "url": "/TrailRunner/img/Ground_4_P.c0eab88e.png"
   },
@@ -136,8 +136,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TrailRunner/img/Ice_2_P.d5b9932f.png"
   },
   {
+    "revision": "c60e9bfcbd96900165fe4b797d0615ba",
+    "url": "/TrailRunner/img/Ice_3.c60e9bfc.png"
+  },
+  {
     "revision": "946d33adcb1e111af7f116e5fb499876",
     "url": "/TrailRunner/img/Ice_3_P.946d33ad.png"
+  },
+  {
+    "revision": "f981319de408decf2948ed019d8915ce",
+    "url": "/TrailRunner/img/Ice_4.f981319d.png"
   },
   {
     "revision": "539dec953c127d8c67b2206f4647e3c8",
@@ -204,7 +212,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TrailRunner/img/background.e1015db3.png"
   },
   {
-    "revision": "68264f471bbb82be6fa318bcbca4dc8a",
+    "revision": "64fcc48f7c196a48a227c86cccfa0b17",
     "url": "/TrailRunner/index.html"
   },
   {
@@ -212,32 +220,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TrailRunner/js/about.03dc64ab.js"
   },
   {
-    "revision": "32dd09251ed4830b4781",
-    "url": "/TrailRunner/js/app.342a033b.js"
+    "revision": "e06392d3a789434f1e42",
+    "url": "/TrailRunner/js/app.294f5cbc.js"
   },
   {
     "revision": "a2176fafa3c93e49c5a5",
     "url": "/TrailRunner/js/chunk-00626e1a.aabf434b.js"
   },
   {
-    "revision": "b6cf168e5c5a27f74cf5",
-    "url": "/TrailRunner/js/chunk-01ab8f3a.071342be.js"
+    "revision": "f91f8f3f36ea56d61e6a",
+    "url": "/TrailRunner/js/chunk-00d830d8.92a7ed96.js"
   },
   {
     "revision": "09c5a446a1acca1393f0",
     "url": "/TrailRunner/js/chunk-0b51446c.86642e71.js"
   },
   {
+    "revision": "ce835ec3df9208f21b67",
+    "url": "/TrailRunner/js/chunk-1667d5a5.cfd35e4b.js"
+  },
+  {
     "revision": "c7d1627db99cfe802a34",
     "url": "/TrailRunner/js/chunk-2d0c5616.faa155b2.js"
-  },
-  {
-    "revision": "a3e70f7ae609cb2f1aaa",
-    "url": "/TrailRunner/js/chunk-96cc0b74.de0e55a4.js"
-  },
-  {
-    "revision": "d13257143a3ac5fe3ad6",
-    "url": "/TrailRunner/js/chunk-ffb5df56.425a3ea3.js"
   },
   {
     "revision": "ba111f80e8d38783ae7b",
