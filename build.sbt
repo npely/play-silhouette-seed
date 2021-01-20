@@ -31,6 +31,7 @@ libraryDependencies ++= Seq(
   "com.mohiva" %% "play-silhouette-testkit" % "6.1.1" % "test",
   "com.h2database" % "h2" % "1.4.199",
   "org.scalatestplus.play" %% "scalatestplus-play" % "5.0.0" % Test,
+  "de.htwg.se" %% "trailrunner" % "0.1",
   specs2 % Test,
   ehcache,
   guice,
@@ -40,9 +41,18 @@ libraryDependencies ++= Seq(
   lazy val TrailRunnerBase = ProjectRef(uri("git://github.com/npely/TrailRunner.git#improvements"), "trailRunnerBase")
 
   lazy val root = (project in file("."))
-  .enablePlugins(PlayScala)
   .dependsOn(TrailRunnerBase)
   .aggregate(TrailRunnerBase)
+  .enablePlugins(PlayScala).settings(
+    name := """trailrunner-play-server""",
+    version := "1.0-SNAPSHOT",
+    scalaVersion := "2.13.3",
+    scalacOptions ++= Seq(
+      "-feature",
+      "-deprecation",
+      "-Xfatal-warnings"
+    )
+  )
 
 routesImport += "utils.route.Binders._"
 
